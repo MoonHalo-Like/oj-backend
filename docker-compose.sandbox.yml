@@ -1,0 +1,9 @@
+version: '3'
+services:
+  oj-code-sandbox:
+    container_name: oj-code-sandbox
+    build: # 服务的 Docker 构建文件位置
+      context: ./box
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
